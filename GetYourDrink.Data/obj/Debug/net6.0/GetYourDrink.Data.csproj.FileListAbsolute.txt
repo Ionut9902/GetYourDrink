@@ -1,0 +1,14 @@
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\bin\Debug\net6.0\GetYourDrink.Data.deps.json
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\bin\Debug\net6.0\GetYourDrink.Data.runtimeconfig.json
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\bin\Debug\net6.0\GetYourDrink.Data.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\bin\Debug\net6.0\GetYourDrink.Data.pdb
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.csproj.AssemblyReference.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.AssemblyInfoInputs.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.AssemblyInfo.cs
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\refint\GetYourDrink.Data.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.pdb
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\GetYourDrink.Data.genruntimeconfig.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Data\obj\Debug\net6.0\ref\GetYourDrink.Data.dll

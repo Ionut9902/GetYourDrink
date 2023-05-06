@@ -1,0 +1,17 @@
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\bin\Debug\net6.0\GetYourDrink.Bussiness.deps.json
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\bin\Debug\net6.0\GetYourDrink.Bussiness.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\bin\Debug\net6.0\GetYourDrink.Bussiness.pdb
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.csproj.AssemblyReference.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.AssemblyInfoInputs.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.AssemblyInfo.cs
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.csproj.CoreCompileInputs.cache
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\refint\GetYourDrink.Bussiness.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.pdb
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\ref\GetYourDrink.Bussiness.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\bin\Debug\net6.0\GetYourDrink.Bussiness.runtimeconfig.json
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\bin\Debug\net6.0\GetYourDrink.Data.dll
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\bin\Debug\net6.0\GetYourDrink.Data.pdb
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.csproj.CopyComplete
+C:\Users\Ionut\source\repos\GetYourDrink\GetYourDrink\GetYourDrink.Bussiness\obj\Debug\net6.0\GetYourDrink.Bussiness.genruntimeconfig.cache
