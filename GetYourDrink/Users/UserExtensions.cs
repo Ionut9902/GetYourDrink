@@ -1,14 +1,15 @@
 ﻿using GetYourDrink.Api.Requests;
-using GetYourDrink.Bussiness.Users.Queries;
+using GetYourDrink.Bussiness.Users.Commands;
 
 namespace GetYourDrink.Api.Users
 {
     public static class UserExtensions
     {
-        public static AddNewUserQuery ToQuery(this AddNewUserRequest request)
+        public static AddNewUserCommand ToQuery(this AddNewUserRequest request)
         {
-            return new AddNewUserQuery
+            return new AddNewUserCommand
             {
+                Email = request.Email,
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Role = request.Role,

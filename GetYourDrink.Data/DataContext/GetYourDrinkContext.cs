@@ -16,11 +16,15 @@ public partial class GetYourDrinkContext : DbContext
 
     public virtual DbSet<User> Users { get; set; } 
 
+    public virtual DbSet<Product> Products { get; set; }
+
+    public virtual DbSet<Favourite> Favourite { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=.;Database=GetYourDrink;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
+    {       
         OnModelCreatingPartial(modelBuilder);
     }
 

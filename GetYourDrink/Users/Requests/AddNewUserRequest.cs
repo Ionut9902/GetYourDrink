@@ -5,6 +5,7 @@ namespace GetYourDrink.Api.Requests
 {
     public class AddNewUserRequest
     {
+        public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Role Role { get; set; }
@@ -14,7 +15,7 @@ namespace GetYourDrink.Api.Requests
         public string Street { get; set; }
         public string StreetNo { get; set; }
         public int PostalCode { get; set; }
-        public string ApartNo { get; set; }
+        public int ApartNo { get; set; }
 
 
         public class AddUserRequestValidation : AbstractValidator<AddNewUserRequest>

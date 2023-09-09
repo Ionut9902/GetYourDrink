@@ -9,14 +9,14 @@ namespace GetYourDrink.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private IMediator _mediator;
+        private readonly IMediator _mediator;
 
         public UserController(IMediator mediator)
         {
             _mediator = mediator;
         }
 
-        [HttpPost("Add-User")]
+        [HttpPost]
         public async Task<bool> AddNewUser(AddNewUserRequest request)
         {
             return await _mediator.Send(request.ToQuery());
