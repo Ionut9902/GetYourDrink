@@ -6,6 +6,16 @@ namespace GetYourDrink.Api.Product
 {
     public static class ProductExtensions
     {
+
+        public static AddToFavouritesCommand ToCommand(this AddToFavouritesRequest request)
+        {
+            return new AddToFavouritesCommand
+            {
+                ProductId = request.ProductId,
+                UserId = request.UserId,
+            };
+        }
+
         public static AddNewProductCommand ToCommand(this AddNewProductRequest request)
         {
             return new AddNewProductCommand
@@ -17,6 +27,16 @@ namespace GetYourDrink.Api.Product
                 Picture = request.Picture,
                 Description = request.Description,
                 Origin = request.Origin
+            };
+        }
+
+        public static AddProductToCartCommand ToCommand(this AddProductToCartRequest request)
+        {
+            return new AddProductToCartCommand
+            {
+                UserId = request.UserId,
+                ProductId = request.ProductId,
+                Quantity = request.Quantity
             };
         }
 
@@ -33,15 +53,6 @@ namespace GetYourDrink.Api.Product
             return new GetProductsQuery
             {
                 Page = request.Page
-            };
-        }
-
-        public static AddToFavouritesCommand ToCommand(this AddToFavouritesRequest request)
-        {
-            return new AddToFavouritesCommand
-            {
-                ProductId = request.ProductId,
-                UserId = request.UserId,
             };
         }
     }

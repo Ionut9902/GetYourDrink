@@ -20,6 +20,8 @@ public partial class GetYourDrinkContext : DbContext
 
     public virtual DbSet<Favourite> Favourite { get; set; }
 
+    public virtual DbSet<CartProduct> CartProduct { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=.;Database=GetYourDrink;Trusted_Connection=True;TrustServerCertificate=True;");
 

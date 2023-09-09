@@ -46,6 +46,12 @@ namespace GetYourDrink.Api.Controllers
         {
             return await _mediator.Send(request.ToCommand());
         }
-    }
 
+        [HttpPost]
+        [HttpPost("{add-to-cart}")]
+        public async Task<bool> AddToCart(AddProductToCartRequest request)
+        {
+            return await _mediator.Send(request.ToCommand());
+        }
+    }
 }

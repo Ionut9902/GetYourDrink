@@ -20,10 +20,19 @@ namespace GetYourDrink.Bussiness.Products.Handlers
             { ProductId = request.ProductId, 
                 UserId = request.UserId };
 
+            if(FavouriteExists(favourite))
+            {
+                return false;
+            }
             _context.Favourite.
                 Add(favourite);
 
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public bool FavouriteExists(Favourite favourite)
+        {
+            return _context.Favourite.Any(x => x.UserId == favourite.UserId && x.ProductId == favourite.ProductId);
         }
     }
 }
