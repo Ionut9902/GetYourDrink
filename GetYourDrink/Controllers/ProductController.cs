@@ -53,5 +53,12 @@ namespace GetYourDrink.Api.Controllers
         {
             return await _mediator.Send(request.ToCommand());
         }
+
+        [HttpGet]
+        [HttpGet("{get-all-favourites}")]
+        public async Task<ProductPage> GetAllFavourites(GetAllFavouritesRequest request)
+        {
+            return await _mediator.Send(request.ToQuery());
+        }
     }
 }

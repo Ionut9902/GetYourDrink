@@ -55,5 +55,14 @@ namespace GetYourDrink.Api.Product
                 Page = request.Page
             };
         }
+
+        public static GetAllFavouritesQuery ToQuery(this GetAllFavouritesRequest request)
+        {
+            return new GetAllFavouritesQuery
+            {
+                UserId = request.UserId,
+                Page = request.Page
+            };
+        }
     }
 }
