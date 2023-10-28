@@ -1,0 +1,40 @@
+﻿API's and parameters:
+1. Add Product(POST): https://localhost:7080/api/product/Addnewproduct :
+        Name
+        Category
+        Alcohol
+        Stock
+        Picture
+        Description
+        Origin
+
+2. Get Product By Id(GET): https://localhost:7080/api/product/GetProductById :
+        ID
+
+3. Get Products(GET) : https://localhost:7080/api/product/GetProducts :
+        Page
+
+4. Add To Favourites(POST) : https://localhost:7080/api/product/AddToFavourites :
+        Product Id
+        User Id
+
+5. Add To Cart(Post) : https://localhost:7080/api/product/AddToCart
+        Product Id
+        User Id
+
+6. Get All Favourites : https://localhost:7080/api/product/GetAllFavourites
+        User Id
+        Page
+
+7. Add New User : https://localhost:7080/api/User/AddNewUser
+        Email
+        FirstName
+        LastName
+        Role
+        DateOfBirth
+        County
+        City
+        Street
+        StreetNo
+        PostalCode
+        ApartNo
