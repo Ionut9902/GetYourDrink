@@ -15,6 +15,7 @@ namespace GetYourDrink.Data.Models
         public string Picture { get; set; }
         public string Descritpion { get; set; }
         public string Origin { get; set; }
+        public float Price { get; set; }
 
     }
 

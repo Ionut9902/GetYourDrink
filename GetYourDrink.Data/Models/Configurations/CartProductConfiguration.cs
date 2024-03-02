@@ -11,6 +11,7 @@ namespace GetYourDrink.Data.Models.Configurations
             builder.Property(x => x.UserId).IsRequired();
             builder.Property(x => x.ProductId).IsRequired();
             builder.Property(x => x.Quantity);
+            builder.Property(x => x.Price).IsRequired();
         }
     }
 }

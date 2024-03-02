@@ -12,6 +12,7 @@ namespace GetYourDrink.Api.Product.Requests
         public string Picture { get; set; }
         public string Description { get; set; }
         public string Origin { get; set; }
+        public float Price { get; set; }
 
         public class AddProductRequestValidation : AbstractValidator<AddNewProductRequest>
         {
@@ -24,6 +25,7 @@ namespace GetYourDrink.Api.Product.Requests
                 RuleFor(x => x.Picture).NotEmpty();
                 RuleFor(x => x.Description).NotEmpty().MaximumLength(150);
                 RuleFor(x => x.Origin).NotEmpty().MaximumLength(30);
+                RuleFor(x => x.Price).NotEmpty().GreaterThanOrEqualTo(1);
             }
         }
     }

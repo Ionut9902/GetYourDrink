@@ -19,7 +19,7 @@ namespace GetYourDrink.Data.Models
         public int PostalCode { get; set; }
         public int ApartNo { get; set; }
 
-        public virtual CartProduct CartProduct { get; set; }
+        public virtual List<CartProduct> CartProducts { get; set; }
         public virtual Order Order { get; set; }
         public virtual Favourite Favourite { get; set; }
     }

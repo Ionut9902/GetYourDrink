@@ -4,6 +4,7 @@ using GetYourDrink.Data.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GetYourDrink.Data.Migrations
 {
     [DbContext(typeof(GetYourDrinkContext))]
-    partial class GetYourDrinkContextModelSnapshot : ModelSnapshot
+    [Migration("20240302165132__OrderAndOrderProductRelation")]
+    partial class _OrderAndOrderProductRelation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

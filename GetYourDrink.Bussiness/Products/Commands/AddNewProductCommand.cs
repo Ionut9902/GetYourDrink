@@ -17,5 +17,6 @@ namespace GetYourDrink.Bussiness.Products.Commands
         public string Picture { get; set; }
         public string Description { get; set; }
         public string Origin { get; set; }
+        public float Price { get; set; }
     }
 }

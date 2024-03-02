@@ -16,11 +16,14 @@ namespace GetYourDrink.Bussiness.Products.Handlers
 
         public async Task<bool> Handle(AddProductToCartCommand request, CancellationToken cancellationToken)
         {
+            var product = _context.Products.FirstOrDefault(x => x.Id == request.ProductId);
+
             var cartProduct = new CartProduct
             {
                 UserId = request.UserId,
                 ProductId = request.ProductId,
                 Quantity = request.Quantity,
+                Price = product.Price
             };
 
             if (ProductAlreadyInCart(cartProduct))

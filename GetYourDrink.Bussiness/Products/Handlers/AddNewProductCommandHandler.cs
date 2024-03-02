@@ -24,7 +24,8 @@ namespace GetYourDrink.Bussiness.Products.Handlers
                 Stock = request.Stock,
                 Picture = request.Picture,
                 Descritpion = request.Description,
-                Origin = request.Origin,   
+                Origin = request.Origin,
+                Price = request.Price
             };
 
             _context.Products.Add(product);

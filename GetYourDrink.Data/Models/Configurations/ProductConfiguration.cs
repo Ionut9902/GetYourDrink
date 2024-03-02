@@ -14,6 +14,7 @@ namespace GetYourDrink.Data.Models.Configurations
             builder.Property(x => x.Picture).IsRequired();
             builder.Property(x => x.Descritpion).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Origin).IsRequired().HasMaxLength(30);
+            builder.Property(x => x.Price).IsRequired();
         }
     }
 }

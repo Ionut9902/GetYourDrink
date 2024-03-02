@@ -4,6 +4,7 @@ using GetYourDrink.Data.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GetYourDrink.Data.Migrations
 {
     [DbContext(typeof(GetYourDrinkContext))]
-    partial class GetYourDrinkContextModelSnapshot : ModelSnapshot
+    [Migration("20240114171348__PriceProperty")]
+    partial class _PriceProperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -146,7 +149,8 @@ namespace GetYourDrink.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("OrderId")
+                        .IsUnique();
 
                     b.ToTable("OrderProduct");
                 });
@@ -291,18 +295,17 @@ namespace GetYourDrink.Data.Migrations
 
             modelBuilder.Entity("GetYourDrink.Data.Models.OrderProduct", b =>
                 {
-                    b.HasOne("GetYourDrink.Data.Models.Order", "Order")
-                        .WithMany("OrderProducts")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                    b.HasOne("GetYourDrink.Data.Models.Order", null)
+                        .WithOne("OrderProduct")
+                        .HasForeignKey("GetYourDrink.Data.Models.OrderProduct", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("GetYourDrink.Data.Models.Order", b =>
                 {
-                    b.Navigation("OrderProducts");
+                    b.Navigation("OrderProduct")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("GetYourDrink.Data.Models.User", b =>

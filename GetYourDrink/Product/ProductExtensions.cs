@@ -26,7 +26,8 @@ namespace GetYourDrink.Api.Product
                 Stock = request.Stock,
                 Picture = request.Picture,
                 Description = request.Description,
-                Origin = request.Origin
+                Origin = request.Origin,
+                Price = request.Price
             };
         }
 

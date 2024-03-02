@@ -18,7 +18,7 @@ namespace GetYourDrink.Data.Models
         public float TotalPrice { get; set; }
         public Status Status { get; set; }
 
-        public virtual OrderProduct OrderProduct { get; set; }
+        public virtual List<OrderProduct> OrderProducts { get; set; }
 
     }
 
