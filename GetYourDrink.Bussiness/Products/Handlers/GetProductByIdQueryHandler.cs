@@ -2,6 +2,7 @@
 using GetYourDrink.Bussiness.Products.Queries;
 using GetYourDrink.Data.DataContext;
 using MediatR;
+using System.Net;
 
 namespace GetYourDrink.Bussiness.Products.Handlers
 {
@@ -20,6 +21,7 @@ namespace GetYourDrink.Bussiness.Products.Handlers
                 .Where(x => x.Id == request.Id)
                 .ToBLProduct()
                 .FirstOrDefault();
+           
         }
     }
 }
