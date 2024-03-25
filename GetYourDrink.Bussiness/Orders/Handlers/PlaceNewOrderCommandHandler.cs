@@ -28,6 +28,7 @@ namespace GetYourDrink.Bussiness.Orders.Handlers
                 LastName = user.LastName,
                 TotalPrice = 0,
                 Status = Status.InProgress,
+                Created = DateTime.UtcNow.AddHours(3),
                 OrderProducts = new List<OrderProduct>()
             };
 

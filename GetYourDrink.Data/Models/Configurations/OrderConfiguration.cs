@@ -17,6 +17,7 @@ namespace GetYourDrink.Data.Models.Configurations
             builder.Property(x => x.LastName).IsRequired().HasMaxLength(30);
             builder.Property(x => x.TotalPrice).IsRequired();
             builder.Property(x => x.Status).IsRequired().HasMaxLength(30);
+            builder.Property(x => x.Created).IsRequired();
             builder.HasMany(u => u.OrderProducts)
                .WithOne(o => o.Order)
                .HasForeignKey(o => o.OrderId)
