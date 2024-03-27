@@ -11,12 +11,13 @@ namespace GetYourDrink.Bussiness.Products
             {
                 Id = x.Id,
                 Name = x.Name,
-                Category = x.Category,
+                Category = x.Category.ToString(),
                 Alcohol = x.Alcohol,
                 Stock = x.Stock,
                 Picture = x.Picture,
                 Descritpion = x.Descritpion,
                 Origin = x.Origin,
+                Price = x.Price,
             });
         }
     }

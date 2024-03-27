@@ -40,6 +40,13 @@ namespace GetYourDrink.Api.Controllers
             return await _mediator.Send(request.ToQuery());
         }
 
+        [HttpGet]
+        [HttpGet("{get-all-products}")]
+        public async Task<ProductPage> GetFIlteredProducts(GetFilteredProductsRequest request)
+        {
+            return await _mediator.Send(request.ToQuery());
+        }
+
         [HttpPost]
         [HttpPost("{add-to-favourites}")]
         public async Task<bool> AddToFavourites(AddToFavouritesRequest request)

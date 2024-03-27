@@ -57,6 +57,19 @@ namespace GetYourDrink.Api.Product
             };
         }
 
+        public static GetFilteredProductsQuery ToQuery(this GetFilteredProductsRequest request)
+        {
+            return new GetFilteredProductsQuery
+            {
+                Page = request.Page,
+                Category = request.Category,
+                Origin = request.Origin,
+                MinAlcoholContent = request.MinAlcoholContent,
+                MaxPrice = request.MaxPrice,
+                Keywords = request.Keywords
+            };
+        }
+
         public static GetAllFavouritesQuery ToQuery(this GetAllFavouritesRequest request)
         {
             return new GetAllFavouritesQuery
